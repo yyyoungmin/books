@@ -9,23 +9,54 @@ document.addEventListener('DOMContentLoaded', () => {
     const container = document.body;
     const items = Array.from(container.querySelectorAll('div[id]'));
 
-    // 순서 뒤집기 / 원래대로
     if (!reversed) {
       items.reverse();
-      button.textContent = '오래된 순으로 보기'; // 👈 여기
     } else {
       items.sort((a, b) => Number(a.id) - Number(b.id));
-      button.textContent = '최근 순으로 보기'; // 👈 여기
     }
 
-    // DOM 다시 붙이기
     items.forEach(item => container.appendChild(item));
     reversed = !reversed;
 
-    // 맨 위로 스크롤
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
     });
   });
+
+  /* =========================
+     🔥 여기부터 추가
+  ========================= */
+
+  const enBtn = document.getElementById('enBtn');
+  const koBtn = document.getElementById('koBtn');
+  const jpBtn = document.getElementById('jpBtn');
+
+  let currentLang = localStorage.getItem('lang') || 'ko';
+
+  function setLanguage(lang) {
+    document.querySelectorAll('[data-' + lang + ']').forEach((el) => {
+      el.innerHTML = el.dataset[lang];
+    });
+
+    currentLang = lang;
+    localStorage.setItem('lang', lang);
+    updateButtons();
+  }
+
+  function updateButtons() {
+    enBtn.style.opacity = '0.4';
+    koBtn.style.opacity = '0.4';
+    jpBtn.style.opacity = '0.4';
+
+    if (currentLang === 'en') enBtn.style.opacity = '1';
+    if (currentLang === 'ko') koBtn.style.opacity = '1';
+    if (currentLang === 'jp') jpBtn.style.opacity = '1';
+  }
+
+  enBtn.addEventListener('click', () => setLanguage('en'));
+  koBtn.addEventListener('click', () => setLanguage('ko'));
+  jpBtn.addEventListener('click', () => setLanguage('jp'));
+
+  setLanguage(currentLang);
 });

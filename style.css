@@ -13,7 +13,7 @@ nav {
 	padding: 20px;
 	width: 100%;
 	height: 30px;
-	background-color: white;
+	background-color: transparent;
 	position: fixed;
 	font-size: 15pt;}
 
@@ -34,13 +34,17 @@ div {
 nav ol {
   display: flex;
   gap: 10px;
-  align-items: center;
+  align-items: center; /* 🔥 이게 핵심 */
 }
 
-nav ol li:last-child {
+nav ol li:nth-last-child(2) {
   margin-left: auto;
 }
 
+nav .recent {
+  font-size: 12px;
+  white-space: nowrap; /* 줄바꿈 방지 */
+}
 
 li {
 	display: inline; /*자기 길이만큼만 차지해라*/
@@ -49,6 +53,8 @@ li {
 p{
 	margin-top: 5px;
 }
+
+
 
 .image {
   height: 400px;
@@ -100,6 +106,38 @@ width: 80%;
     color: slategrey;
 }
 
+.lang-toggle {
+  margin-left: auto;
+  margin-right: 24px;
+
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.lang-toggle button,
+nav .recent {
+  font-family: monospace;
+  font-size: 12px;
+  line-height: 1;
+  height: 16px;
+
+  display: flex;
+  align-items: center;
+}
+
+.lang-toggle button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+nav .recent {
+  white-space: nowrap;
+}
+
 a{
 	text-decoration: none;
 	cursor: pointer;
@@ -116,5 +154,7 @@ a:visited {
 
 
 @media screen and (max-width: 704px) {
-
+li {
+	font-size: 12pt;
+}
 }

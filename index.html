@@ -8,13 +8,15 @@
 	<meta property="og:image" content="">
 	<meta name="viewport" content="width=device-width, user-scalable=no">
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=home,open_in_new,swap_vert" />
 	<link rel="icon" type="image/png" href="">
 
 </head>
 <body>
 <nav>
 	<ol>
-		<li>BOOKS</li>
+		<li></li>
+		<span>
 		<li><a href="#0"> 🍬</a></li>
 		<li><a href="#1"> 🌊</a></li>
 		<li><a href="#2"> 🍊 </a></li>
@@ -23,11 +25,20 @@
 		<li><a href="#5"> ❄️</a></li>
 		<li><a href="#6"> 🎨</a></li>
 		<li><a href="#7"> 🚶</a></li>
+		</span>
+		<span>
 		<li><a href="#8"> 🌙</a></li>
 		<li><a href="#9"> 📎</a></li>
 		<li><a href="#10"> 🏰</a></li>
+		</span>
+	
+		<li class="lang-toggle">
+  <button id="enBtn">EN</button>
+  <button id="koBtn">KR</button>
+  <button id="jpBtn">JP</button>
+</li>
 		<li>
-<a class="recent">최근 순으로 보기</a>
+<a class="recent"><span class="material-symbols-outlined">swap_vert</span></a>
 
 </li>
 	</ol>
@@ -49,13 +60,20 @@
 	</div>
 	<div class ="description">
 		<h3>Candy book</h3>
-		<p class="indent">
+		<p class="indent" data-ko="여행 중에 만난 사탕껍질들의 다양한 형태들에서 영감을 받아 만들었다.
+컴퓨터 대신 오래된 복사기를 이용해 확대하고, 축소하고, 이미지들을 겹치며, 
+직접적이고 우연적인 이미지를 만드는 실험을 통해 만들어진 책이다." data-jp="キャンディの包み紙の多様な形から着想を得て制作しました。
+コンピューターの代わりにコピー機を使い、拡大・縮小やイメージを重ねることで、直接的かつ偶然に生まれるイメージを探る実験を通して完成した本です。
+古いコピー機で複写したさまざまなサイズの紙を、糸で手製本しました。
+表紙はリソグラフで印刷しています。" data-en="Candy book was inspired by the diverse forms of candy wrappers I collected during my travels.
+Using an old photocopier instead of a computer, I experimented with enlarging, reducing, and layering images to generate direct and unexpected visual results.
+The book emerged from this process of exploring accidental imagery.">
 		여행 중에 만난 사탕껍질들의 다양한 형태들에서 영감을 받아 만들었다.
 컴퓨터 대신 오래된 복사기를 이용해 확대하고, 축소하고, 이미지들을 겹치며, 
 직접적이고 우연적인 이미지를 만드는 실험을 통해 만들어진 책이다.</p>
 
-		<p class="indent2">12 cm * 21 cm </p>
-	<p class="indent2">실제본 </p>
+		<p class="indent2">120 x 210 mm </p>
+	<p class="indent2" data-ko="실제본, 종이접기, 꼴라주" data-jp="Hand Sewing, Collage, Origami" data-en="Hand Sewing , Collage, Origami">실제본, 종이접기, 꼴라주 </p>
 	<p class="indent2"> 26P </p>
 	<p class="indent2">2017</p>
 
@@ -75,9 +93,13 @@
 	</div>
 	<div class ="description">
 		<h3>Sea of Portugal</h3>
-		<p class="indent">포르투갈의 눈부시게 아름다운 바다들. 나자레(Nazare), 코스타노바(Costanova), 마토지뉴스(Matosinhos). 여름 동안 세군데의 바다에서 사진을 찍고 그림을 그리고 작은 것들을 수집하고 글을 썼다. 3가지 사이즈의 종이를 엮어 손으로 직접 제본 했다.</p>
+		<p class="indent" data-ko="포르투갈의 눈부시게 아름다운 바다들. 나자레(Nazare), 코스타노바(Costanova), 마토지뉴스(Matosinhos). 여름 동안 세군데의 바다에서 사진을 찍고 그림을 그리고 작은 것들을 수집하고 글을 썼다. 3가지 사이즈의 종이를 엮어 손으로 직접 제본 했다." data-jp="まばゆいほど美しいポルトガルの海、Nazare、Costa Nova、Matosinhos。
+夏のあいだ、3つの海辺で写真を撮り、絵を描き、小さなものを集め、文章を書きました。
+3種類のサイズの紙を組み合わせ、手製本で仕上げました。" data-en="The dazzlingly beautiful seas of Nazare, Costa Nova, and Matosinhos.
+During the summer, I photographed, drew, collected small objects, and wrote while spending time by these three different shores.
+The book is hand-bound using three different paper sizes.">포르투갈의 눈부시게 아름다운 바다들. 나자레(Nazare), 코스타노바(Costanova), 마토지뉴스(Matosinhos). 여름 동안 세군데의 바다에서 사진을 찍고 그림을 그리고 작은 것들을 수집하고 글을 썼다. 3가지 사이즈의 종이를 엮어 손으로 직접 제본 했다.</p>
 			<p class="indent2">205 x 140 mm </p>
-			<p class="indent2">실제본 </p>
+			<p class="indent2" data-ko="실제본" data-jp="Hand Sewing" data-en="Hand Sewing">실제본 </p>
 			<p class="indent2"> 48P </p>
 			<p class="indent2">2018</p>
 	</div>
@@ -96,7 +118,8 @@
 	</div>
 	<div class ="description">
 		<h3>Small collecting book 1</h3>
-		<p class="indent">포르투갈의 어느 가게에서 한 손에 들어오는 작은 노트를 샀다. 노트를 사고 돌아가다 길에서 주운 주황색 귤이 그려진 캔디껍질을 붙였다. 그리고 유럽의 길에서, 슈퍼마켓에서, 미술관에서, 숲에서, 바다에서 작고 쓸모없지만 예쁜 것들을 계속 수집해서 붙여나갔다. 그 노트를 그대로 스캔해서 프린트.
+		<p class="indent" data-ko="포르투갈의 어느 가게에서 한 손에 들어오는 작은 노트를 샀다. 노트를 사고 돌아가다 길에서 주운 주황색 귤이 그려진 캔디껍질을 붙였다. 그리고 유럽의 길에서, 슈퍼마켓에서, 미술관에서, 숲에서, 바다에서 작고 쓸모없지만 예쁜 것들을 계속 수집해서 붙여나갔다. 그 노트를 그대로 스캔해서 프린트." data-jp="ポルトガルのあるお店で片手に収まる小さなノートを買った。 ノートを買って帰る途中、道で拾ったオレンジ色のみかんが描かれたキャンディの皮を貼った。 そしてヨーロッパの道で、スーパーマーケットで、美術館で、森で、海で小さくて役に立たないけどきれいなものをどんどん集めて貼っていった。 そのノートをそのままスキャンしてプリント。
+" data-en="bought a small notebook that fits in one hand at a shop in Portugal. On my way back, I picked up a candy wrapper with an orange printed on it and stuck it inside. Then, across Europe—on the streets, in supermarkets, museums, forests, and by the sea—I kept collecting small, useless but beautiful things and pasting them in. The notebook was then scanned and printed as it is.">포르투갈의 어느 가게에서 한 손에 들어오는 작은 노트를 샀다. 노트를 사고 돌아가다 길에서 주운 주황색 귤이 그려진 캔디껍질을 붙였다. 그리고 유럽의 길에서, 슈퍼마켓에서, 미술관에서, 숲에서, 바다에서 작고 쓸모없지만 예쁜 것들을 계속 수집해서 붙여나갔다. 그 노트를 그대로 스캔해서 프린트.
 
 </p>
 			<p class="indent2">90 x 130 mm
@@ -119,7 +142,7 @@
 	</div>
 	<div class ="description">
 		<h3>Small collecting book 2 (scotland)</h3>
-		<p class="indent">Edinburgh, leith, glasgow 스코틀랜드에서 보낸 겨울은 서늘하고 축축했다. 에딘버러에서 10주간 미술 수업을 듣고, 스코틀랜드 지역을 여행하는 동안 항상 진한 녹색 노트를 가지고 다녔다. 수집한 것들, 메모들, 꼴라주들, 드로잉들 담긴 노트를 그대로 스캔해서 프린트.
+		<p class="indent" data-ko="Edinburgh, leith, glasgow 스코틀랜드에서 보낸 겨울은 서늘하고 축축했다. 에딘버러에서 10주간 미술 수업을 듣고, 스코틀랜드 지역을 여행하는 동안 항상 진한 녹색 노트를 가지고 다녔다. 수집한 것들, 메모들, 꼴라주들, 드로잉들 담긴 노트를 그대로 스캔해서 프린트." data-jp="edinburgh、leith、glasgowスコットランドで過ごした冬は涼しくてじめじめした。 エジンバラで10週間美術の授業を受け、スコットランド地域を旅行する間、いつも濃い緑色のノートを持ち歩いていた。 収集したもの、メモ、コラージュ、ドローイングが入ったノートをそのままスキャンしてプリント。" data-en="The winter I spent in Scotland—Edinburgh, Leith, and Glasgow—was cool and damp. While taking art classes in Edinburgh for ten weeks and traveling around Scotland, I always carried a deep green notebook with me. The notebook, filled with collected objects, notes, collages, and drawings, was scanned and printed as it is.">Edinburgh, leith, glasgow 스코틀랜드에서 보낸 겨울은 서늘하고 축축했다. 에딘버러에서 10주간 미술 수업을 듣고, 스코틀랜드 지역을 여행하는 동안 항상 진한 녹색 노트를 가지고 다녔다. 수집한 것들, 메모들, 꼴라주들, 드로잉들 담긴 노트를 그대로 스캔해서 프린트.
 </p>
 		<p class="indent2">90 x 160 mm
  </p>
@@ -141,10 +164,11 @@
 	</div>
 	<div class ="description">
 		<h3>SHORTBREAD DIARY</h3>
-		<p class="indent">작년 겨울, 에딘버러에서 미술 수업을 들으며 3개월을 머물렀다. 도서관에서 빌린 책과 헌책방에서 발견한 책들을 보며 먹은 쇼트브레드와 영국 과자들에 대한 기록이다. 들어간 과자와 패키지의 그림은 에딘버러에서 배운 판화 기법을 이용했다.</p>
+		<p class="indent" data-ko="작년 겨울, 에딘버러에서 미술 수업을 들으며 3개월을 머물렀다. 도서관에서 빌린 책과 헌책방에서 발견한 책들을 보며 먹은 쇼트브레드와 영국 과자들에 대한 기록이다. 들어간 과자와 패키지의 그림은 에딘버러에서 배운 판화 기법을 이용했다." data-jp="昨年の冬、エジンバラで美術の授業を受けながら3ヶ月間滞在した。図書館で借りた本と古本屋で見つけた本を見ながら食べたショートブレッドとイギリスのお菓子についての記録した。中に入ったお菓子やパッケージの絵は、エジンバラで学んだ版画技法を利用した。
+" data-en="Last winter, I stayed in Edinburgh for three months while taking art classes. This is a record of the shortbread and British sweets I ate while looking through books borrowed from the library and discovered in secondhand bookstores. The images of the sweets and their packaging were created using printmaking techniques I learned in Edinburgh.">작년 겨울, 에딘버러에서 미술 수업을 들으며 3개월을 머물렀다. 도서관에서 빌린 책과 헌책방에서 발견한 책들을 보며 먹은 쇼트브레드와 영국 과자들에 대한 기록이다. 들어간 과자와 패키지의 그림은 에딘버러에서 배운 판화 기법을 이용했다.</p>
 		<p class="indent2"> 105 x 155 mm
  </p>
-			<p class="indent2">실제본 </p>
+			<p class="indent2" data-ko="실제본" data-jp="Hand Sewing" data-en="Hand Sewing">실제본 </p>
 			<p class="indent2"> 48P </p>
 			<p class="indent2">2019</p>
 	</div>
@@ -164,7 +188,10 @@
 	</div>
 	<div class ="description">
 		<h3>ARCTIC CIRCLE</h3>
-		<p class="indent">아주 추웠던 겨울, 
+		<p class="indent" data-ko="아주 추웠던 겨울, 
+스웨덴, 핀란드, 노르웨이를 여행했다. 시작부터 눈 때문에 비행기가 캔슬이 되었고, 어렵게 도착한 북유럽에서도 눈으로 인한 연착은 계속되었다. 어딜가든 눈이 쌓여 있던 그곳에서 만났던 오로라, 밤하늘의 별, 숲, 끝없이 펼쳐진 하얀 풍경들, 특별한 언어들. 그곳에서 느꼈던 이미지들을 꼴라주, 사진, 판화로 담아냈다." data-jp="とても寒かった冬。
+スウェーデン、フィンランド、ノルウェーを旅した。スタートから雪のせいで飛行機がキャンセルとなり、やっと到着した北欧でも雪による延着は続いた。どこもかしこも雪が積もっていたそこで出会ったオーロラ、夜空の星、森、果てしなく広がる白い風景、特別な言語。 そこで感じたイメージをコラージュ、写真、版画で描き出した。
+" data-en="In a very cold winter, I traveled through Sweden, Finland, and Norway. From the very beginning, my flight was canceled due to snow, and even after finally arriving in the Nordic region, delays caused by snow continued. Everywhere was covered in snow—where I encountered the aurora, stars in the night sky, forests, endlessly stretching white landscapes, and unfamiliar languages. The images I felt there were expressed through collage, photography, and printmaking.">아주 추웠던 겨울, 
 스웨덴, 핀란드, 노르웨이를 여행했다. 시작부터 눈 때문에 비행기가 캔슬이 되었고, 어렵게 도착한 북유럽에서도 눈으로 인한 연착은 계속되었다. 어딜가든 눈이 쌓여 있던 그곳에서 만났던 오로라, 밤하늘의 별, 숲, 끝없이 펼쳐진 하얀 풍경들, 특별한 언어들. 그곳에서 느꼈던 이미지들을 꼴라주, 사진, 판화로 담아냈다.
 </p>
 		<p class="indent2">125 x 175 mm </p>
@@ -187,7 +214,7 @@
 	</div>
 	<div class ="description">
 		<h3>Spectrum of colors</h3>
-		<p class="indent"> 겨우 만난 오로라의 신비로운 녹색, 얼어붙은 파란  바다, 비온 후 비자림의 흙, 새벽에 온 눈이 만든 하얀 풍경…  여행을 하며  만난 다양한 색깔의 이야기들을 담았다.</p>
+		<p class="indent" data-ko="겨우 만난 오로라의 신비로운 녹색, 얼어붙은 파란  바다, 비온 후 비자림의 흙, 새벽에 온 눈이 만든 하얀 풍경…  여행을 하며  만난 다양한 색깔의 이야기들을 담았다." data-jp="やっと出会ったオーロラの神秘的な緑、凍った青い海、雨上がりの榧子林（ピジャリム）の土、夜明けに降った雪が作った白い風景…。 旅をしながら出会った様々な色の物語を盛り込んだ。 ヨーロッパのヴィンテージショップで発見した1920～30年代のミニ写真集からインスピレーションを受けた。" data-en="The mystical green of the aurora I finally encountered, the frozen blue sea, the soil of Bijarim after the rain, the white landscape shaped by snow at dawn… This book gathers stories of the many colors I came across while traveling. Inspired by a small photo book from the 1920s–30s discovered in a vintage shop in Europe."> 겨우 만난 오로라의 신비로운 녹색, 얼어붙은 파란  바다, 비온 후 비자림의 흙, 새벽에 온 눈이 만든 하얀 풍경…  여행을 하며  만난 다양한 색깔의 이야기들을 담았다.</p>
 		<p class="indent2">95 x 55 mm </p>
 			<p class="indent2">15 postcards + 1 mini poster </p>
 			<p class="indent2">2020 ~ 2024</p>
@@ -207,7 +234,10 @@
 	</div>
 	<div class ="description">
 		<h3>아래를 보는 산책</h3>
-		<p class="indent">어딘가를 걸을 때 자꾸만 시선은 아래를 향한다. 낙화한 꽃과 잎사귀, 버려진 사물들, 신비로운 모양으로 드리워진 빛과 그림자, 모래 위에 떨어진 깃털... 모두가 스쳐지나간 것들 앞에서 잠깐 멈춰서서 그것들을 살펴본다. 산책의 끝에 대부분의 것들은 잊혀지지만 가끔은 오래 기억나는 것들이 있다. 우연히 만난 / 이상하고 아름다운 것들로 가득 찬 산책 일기
+		<p class="indent" data-ko="어딘가를 걸을 때 자꾸만 시선은 아래를 향한다. 낙화한 꽃과 잎사귀, 버려진 사물들, 신비로운 모양으로 드리워진 빛과 그림자, 모래 위에 떨어진 깃털... 모두가 스쳐지나간 것들 앞에서 잠깐 멈춰서서 그것들을 살펴본다. 산책의 끝에 대부분의 것들은 잊혀지지만 가끔은 오래 기억나는 것들이 있다. 우연히 만난 이상하고 아름다운 것들로 가득 찬 산책 일기
+*산책을 하며 수집한 것들을 모아둔 파일을 상상하며 만들었다." data-jp="どこかを歩いている時、どうしても視線は下を向いてしまう。落ちた花と葉っぱ、捨てられた物たち、神秘的な形に映し出させた光と影、砂の上に落ちた羽毛...。誰もが通り過ぎたものたちの前で立ち止まり、それらを見つめる。散歩の終わりにはほとんどのものは忘れ去られてしまうが、たまに長く記憶に残るものがある。偶然出会った不思議で美しいものたちでいっぱいの散歩日記。
+*散歩をしながら収集しThe mystical green of the aurora I finally encountered, the frozen blue sea, the soil of Bijarim after the rain, the white landscape shaped by snow at dawn… This book holds stories of the many colors I came across while traveling.たものを集めておいたファイルを想像しながら作った。
+" data-en="The mystical green of the aurora I finally encountered, the frozen blue sea, the soil of Bijarim after the rain, the white landscape shaped by snow at dawn… This book holds stories of the many colors I came across while traveling.">어딘가를 걸을 때 자꾸만 시선은 아래를 향한다. 낙화한 꽃과 잎사귀, 버려진 사물들, 신비로운 모양으로 드리워진 빛과 그림자, 모래 위에 떨어진 깃털... 모두가 스쳐지나간 것들 앞에서 잠깐 멈춰서서 그것들을 살펴본다. 산책의 끝에 대부분의 것들은 잊혀지지만 가끔은 오래 기억나는 것들이 있다. 우연히 만난 이상하고 아름다운 것들로 가득 찬 산책 일기
 *산책을 하며 수집한 것들을 모아둔 파일을 상상하며 만들었다.
 </p>
 		<p class="indent2">135 x 195 mm</p>
@@ -230,9 +260,12 @@
 	</div>
 	<div class ="description">
 		<h3>SPECTRUM OF NIGHT</h3>
-		<p class="indent">깊고 옅은 어둠 속, 새롭게 드러나는 형태와 장면들을 보기 위해 일부러  밤 산책을 한다. 어둠 속에서 빛나는 것들, 문 닫힌 가게들, 새벽에 읽은 문장과 멜로디, 밤에만 떠오르는 생각들. 느리게 흘러가던 밤은 어느새 꿈으로 전환된다. 갑작스럽고, 맥락 없고, 폭발하고, 연결되지 않는 꿈에서 어떤 의미를 찾아보려고 했지만, 모든 것은 물음표로 남겨진 채 고요한 새벽이 다시 찾아온다. 그동안 수없이 지나온 밤의 장면들을 담았다.</p>
+		<p class="indent" data-ko="깊고 옅은 어둠 속, 새롭게 드러나는 형태와 장면들을 보기 위해 일부러  밤 산책을 한다. 어둠 속에서 빛나는 것들, 문 닫힌 가게들, 새벽에 읽은 문장과 멜로디, 밤에만 떠오르는 생각들. 느리게 흘러가던 밤은 어느새 꿈으로 전환된다. 갑작스럽고, 맥락 없고, 폭발하고, 연결되지 않는 꿈에서 어떤 의미를 찾아보려고 했지만, 모든 것은 물음표로 남겨진 채 고요한 새벽이 다시 찾아온다. 그동안 수없이 지나온 밤의 장면들을 담았다." data-jp="深く、また淡い闇の中で、新たに立ち現れるかたちや場面を見るために、私はあえて夜の散歩に出る。
+闇の中で光るものたち、閉ざされた店、明け方に読んだ一節や旋律、夜にだけ浮かんでくる思考。
+脈絡もなく、つながりもしない夢が過ぎ去り、再び訪れる静かな夜明け。
+そんなふうに、これまで幾度となく通り過ぎてきた夜の情景を、そっと写し取った。" data-en="In deep and faint darkness, I deliberately take night walks to see the forms and scenes that newly emerge. Things that glow in the dark, closed shops, lines and melodies read at dawn, thoughts that surface only at night. The slowly passing night turns into dreams—sudden, fragmented, explosive, and disconnected. I tried to find meaning in them, but everything remains as a question, and a quiet dawn returns. This book captures the many night scenes I have passed through.">깊고 옅은 어둠 속, 새롭게 드러나는 형태와 장면들을 보기 위해 일부러  밤 산책을 한다. 어둠 속에서 빛나는 것들, 문 닫힌 가게들, 새벽에 읽은 문장과 멜로디, 밤에만 떠오르는 생각들. 느리게 흘러가던 밤은 어느새 꿈으로 전환된다. 갑작스럽고, 맥락 없고, 폭발하고, 연결되지 않는 꿈에서 어떤 의미를 찾아보려고 했지만, 모든 것은 물음표로 남겨진 채 고요한 새벽이 다시 찾아온다. 그동안 수없이 지나온 밤의 장면들을 담았다.</p>
 		<p class="indent2">215 x 165 mm</p>
-			<p class="indent2"> 비정형 실제본 </p>
+			<p class="indent2" data-ko="실제본" data-jp="Hand Sewing" data-en="Hand Sewing">실제본 </p>
 			<p class="indent2"> 48P </p>
 			<p class="indent2">2024</p>
 	</div>
@@ -252,11 +285,11 @@
 	</div>
 	<div class ="description">
 		<h3>COPY A COPY</h3>
-		<p class="indent">일상적인 사물과 여행 중 얻은 수집품들을 복사기에 넣는다. 확대와 축소를 하고, 색깔을 바꾸고, 복사본을 다시 복사한다.원본과 점점 멀어져 가는 복사본에서  사물들에 숨겨져 있던 흥미로운 부분과 가능성을 발견하곤 한다.
+		<p class="indent" data-ko="일상적인 사물과 여행 중 얻은 수집품들을 복사기에 넣는다. 확대와 축소를 하고, 색깔을 바꾸고, 복사본을 다시 복사한다.원본과 점점 멀어져 가는 복사본에서  사물들에 숨겨져 있던 흥미로운 부분과 가능성을 발견하곤 한다." data-jp="日常的なものや旅先で集めた収集物をコピー機に入れる。拡大や縮小をし、色を変え、コピーをさらにコピーする。原本から少しずつ離れていく複写の中で、ものに隠れていた興味深い部分や可能性を見つけることがある。" data-en="I place everyday objects and collected items from my travels into a copy machine. I enlarge and reduce them, change their colors, and copy the copies again. As the reproductions gradually move away from the original, I often discover unexpected details and hidden possibilities within the objects.">일상적인 사물과 여행 중 얻은 수집품들을 복사기에 넣는다. 확대와 축소를 하고, 색깔을 바꾸고, 복사본을 다시 복사한다.원본과 점점 멀어져 가는 복사본에서  사물들에 숨겨져 있던 흥미로운 부분과 가능성을 발견하곤 한다.
 </p>
 		<p class="indent2">120 x 210 mm
  </p>
-			<p class="indent2">실제본 </p>
+			<p class="indent2" data-ko="실제본" data-jp="Hand Sewing" data-en="Hand Sewing">실제본 </p>
 			<p class="indent2"> 24P </p>
 			<p class="indent2">2025</p>
 			<p class="indent2">Limited to 100 copies</p>
@@ -275,9 +308,9 @@
 	</div>
 	<div class ="description">
 		<h3>School of Seeing</h3>
-		<p class="indent">오스트리아, 호엔 짤츠부르크의 성에서 판화를 배우며 보낸 여름의 마지막 날. 잉크 묻은 판화판들과 조각들을 정크룸에서 주운 빈 비디오테이프 케이스에 담아왔다. 이제 그 테이프를 열면 실험하고 온몸을 다해 느끼고 몰입해서 작업하던 여름이 내 안에서 상영된다. </p>
+		<p class="indent" data-ko="오스트리아, 호엔 짤츠부르크의 성에서 판화를 배우며 보낸 여름의 마지막 날. 잉크 묻은 판화판들과 조각들을 정크룸에서 주운 빈 비디오테이프 케이스에 담아왔다. 이제 그 테이프를 열면 실험하고 온몸을 다해 느끼고 몰입해서 작업하던 여름이 내 안에서 상영된다." data-jp="オーストリア、ホーエンザルツブルク城で版画を学びながら過ごした夏の最後の日。インクのついた版画板や破片を、ジャンクルームで拾った空のビデオテープケースに入れて持ち帰った。今そのテープを開くと、実験し、全身で感じ、没頭して制作していたあの夏が自分の中で再生される。" data-en="On the last day of summer, spent learning printmaking at Hohensalzburg Fortress in Austria, I packed ink-stained plates and fragments into an empty videotape case I found in a junk room. Now, whenever I open the tape, that summer—full of experiments, immersion, and working with my whole body—plays again within me.">오스트리아, 호엔 짤츠부르크의 성에서 판화를 배우며 보낸 여름의 마지막 날. 잉크 묻은 판화판들과 조각들을 정크룸에서 주운 빈 비디오테이프 케이스에 담아왔다. 이제 그 테이프를 열면 실험하고 온몸을 다해 느끼고 몰입해서 작업하던 여름이 내 안에서 상영된다. </p>
 		<p class="indent2">210 x 297 mm </p>
-			<p class="indent2">실제본, 꼴라주 </p>
+			<p class="indent2" data-ko="실제본, 꼴라주" data-jp="Hand Sewing, Collage" data-en="Hand Sewing, Collage">실제본, 꼴라주 </p>
 			<p class="indent2"> 36P </p>
 			<p class="indent2">2026</p>
 	</div>
