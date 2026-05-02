@@ -41,6 +41,11 @@ nav ol li:nth-last-child(2) {
   margin-left: auto;
 }
 
+.emoji-scroll {
+  display: flex;
+  gap: 10px;
+}
+
 nav .recent {
   font-size: 12px;
   white-space: nowrap; /* 줄바꿈 방지 */
@@ -157,4 +162,25 @@ a:visited {
 li {
 	font-size: 12pt;
 }
+
+.emoji-scroll {
+    width: 50vw;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    flex-shrink: 0;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .emoji-scroll li {
+    flex: 0 0 auto;
+  }
+
+  .emoji-scroll::-webkit-scrollbar {
+    display: none;
+  }
+
+  .emoji-scroll {
+    scrollbar-width: none;
+  }
 }
